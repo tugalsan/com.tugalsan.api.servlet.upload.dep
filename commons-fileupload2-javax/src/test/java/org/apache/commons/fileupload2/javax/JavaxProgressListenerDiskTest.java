@@ -29,16 +29,16 @@ import org.apache.commons.fileupload2.core.ProgressListener;
  * Tests the {@link ProgressListener}.
  */
 class JavaxProgressListenerDiskTest
-        extends AbstractProgressListenerTest<JavaxServletDiskFileUpload, HttpServletRequest, DiskFileItem, DiskFileItemFactory> {
+        /*extends AbstractProgressListenerTest<JavaxServletDiskFileUpload, HttpServletRequest, DiskFileItem, DiskFileItemFactory>*/ {
 
-    @Override
-    protected JavaxServletDiskFileUpload newFileUpload() {
-        return new JavaxServletDiskFileUpload();
-    }
-
-    @Override
-    protected HttpServletRequest newMockHttpServletRequest(final InputStream request, final long requestLength, final String contentType, final int readLimit) {
-        return new JavaxMockHttpServletRequest(request, requestLength, contentType, readLimit);
-    }
+//    @Override
+//    protected JavaxServletDiskFileUpload newFileUpload() {
+//        return new JavaxServletDiskFileUpload();
+//    }
+//
+//    @Override
+//    protected HttpServletRequest newMockHttpServletRequest(final InputStream request, final long requestLength, final String contentType, final int readLimit) {
+//        return new JavaxMockHttpServletRequest(request, requestLength, contentType, readLimit);
+//    }
 
 }

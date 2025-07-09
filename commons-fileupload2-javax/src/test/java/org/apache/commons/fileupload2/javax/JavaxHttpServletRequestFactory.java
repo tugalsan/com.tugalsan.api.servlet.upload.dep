@@ -22,28 +22,28 @@ import org.apache.commons.fileupload2.core.AbstractFileUpload;
 
 final class JavaxHttpServletRequestFactory {
 
-    public static HttpServletRequest createHttpServletRequestWithNullContentType() {
-        final var requestData = "foobar".getBytes();
-        return new JavaxMockHttpServletRequest(requestData, null);
-    }
-
-    static public HttpServletRequest createInvalidHttpServletRequest() {
-        final var requestData = "foobar".getBytes();
-        return new JavaxMockHttpServletRequest(requestData, AbstractFileUpload.MULTIPART_FORM_DATA);
-    }
-
-    public static HttpServletRequest createValidHttpServletRequest(final String[] strFileNames) {
-        // TODO Provide a real implementation.
-
-        final var sbRequestData = new StringBuilder();
-
-        for (final String strFileName : strFileNames) {
-            sbRequestData.append(strFileName);
-        }
-
-        final var requestData = sbRequestData.toString().getBytes();
-
-        return new JavaxMockHttpServletRequest(requestData, AbstractFileUpload.MULTIPART_FORM_DATA);
-    }
+//    public static HttpServletRequest createHttpServletRequestWithNullContentType() {
+//        final var requestData = "foobar".getBytes();
+//        return new JavaxMockHttpServletRequest(requestData, null);
+//    }
+//
+//    static public HttpServletRequest createInvalidHttpServletRequest() {
+//        final var requestData = "foobar".getBytes();
+//        return new JavaxMockHttpServletRequest(requestData, AbstractFileUpload.MULTIPART_FORM_DATA);
+//    }
+//
+//    public static HttpServletRequest createValidHttpServletRequest(final String[] strFileNames) {
+//        // TODO Provide a real implementation.
+//
+//        final var sbRequestData = new StringBuilder();
+//
+//        for (final String strFileName : strFileNames) {
+//            sbRequestData.append(strFileName);
+//        }
+//
+//        final var requestData = sbRequestData.toString().getBytes();
+//
+//        return new JavaxMockHttpServletRequest(requestData, AbstractFileUpload.MULTIPART_FORM_DATA);
+//    }
 
 }

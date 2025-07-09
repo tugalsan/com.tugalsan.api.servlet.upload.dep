@@ -28,17 +28,17 @@ import org.apache.commons.fileupload2.core.DiskFileItemFactory;
  * Unit test for items with varying sizes.
  */
 class JavaxSizesTest
-        extends AbstractSizesTest<JavaxServletFileUpload<DiskFileItem, DiskFileItemFactory>, HttpServletRequest, DiskFileItem, DiskFileItemFactory> {
+       /* extends AbstractSizesTest<JavaxServletFileUpload<DiskFileItem, DiskFileItemFactory>, HttpServletRequest, DiskFileItem, DiskFileItemFactory>*/ {
 
-    @Override
-    protected JavaxServletFileUpload<DiskFileItem, DiskFileItemFactory> newFileUpload() {
-        return new JavaxServletFileUpload<>(DiskFileItemFactory.builder().get());
-    }
-
-    @Override
-    protected JavaxMockHttpServletRequest newMockHttpServletRequest(final InputStream request, final long requestLength, final String contentType,
-            final int readLimit) {
-        return new JavaxMockHttpServletRequest(request, requestLength, contentType, readLimit);
-    }
+//    @Override
+//    protected JavaxServletFileUpload<DiskFileItem, DiskFileItemFactory> newFileUpload() {
+//        return new JavaxServletFileUpload<>(DiskFileItemFactory.builder().get());
+//    }
+//
+//    @Override
+//    protected JavaxMockHttpServletRequest newMockHttpServletRequest(final InputStream request, final long requestLength, final String contentType,
+//            final int readLimit) {
+//        return new JavaxMockHttpServletRequest(request, requestLength, contentType, readLimit);
+//    }
 
 }

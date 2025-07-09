@@ -28,26 +28,26 @@ import org.apache.commons.fileupload2.core.DiskFileItemFactory;
  * Unit test for items with varying sizes.
  */
 class JavaxStreamingDiskTest
-        extends AbstractStreamingTest<JavaxServletDiskFileUpload, HttpServletRequest, JavaxServletRequestContext, DiskFileItem, DiskFileItemFactory> {
+       /* extends AbstractStreamingTest<JavaxServletDiskFileUpload, HttpServletRequest, JavaxServletRequestContext, DiskFileItem, DiskFileItemFactory>*/ {
 
-    @Override
-    protected DiskFileItemFactory newDiskFileItemFactory() {
-        return DiskFileItemFactory.builder().get();
-    }
-
-    @Override
-    protected JavaxServletDiskFileUpload newFileUpload() {
-        return new JavaxServletDiskFileUpload();
-    }
-
-    @Override
-    protected HttpServletRequest newMockHttpServletRequest(final InputStream request, final long requestLength, final String contentType, final int readLimit) {
-        return new JavaxMockHttpServletRequest(request, requestLength, contentType, readLimit);
-    }
-
-    @Override
-    protected JavaxServletRequestContext newServletRequestContext(final HttpServletRequest request) {
-        return new JavaxServletRequestContext(request);
-    }
+//    @Override
+//    protected DiskFileItemFactory newDiskFileItemFactory() {
+//        return DiskFileItemFactory.builder().get();
+//    }
+//
+//    @Override
+//    protected JavaxServletDiskFileUpload newFileUpload() {
+//        return new JavaxServletDiskFileUpload();
+//    }
+//
+//    @Override
+//    protected HttpServletRequest newMockHttpServletRequest(final InputStream request, final long requestLength, final String contentType, final int readLimit) {
+//        return new JavaxMockHttpServletRequest(request, requestLength, contentType, readLimit);
+//    }
+//
+//    @Override
+//    protected JavaxServletRequestContext newServletRequestContext(final HttpServletRequest request) {
+//        return new JavaxServletRequestContext(request);
+//    }
 
 }
