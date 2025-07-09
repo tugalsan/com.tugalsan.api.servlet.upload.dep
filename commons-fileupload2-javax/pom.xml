@@ -53,6 +53,8 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-fileupload2-core</artifactId>
+            <scope>system</scope>
+            <systemPath>C:/git/api/com.tugalsan.api.servlet.upload.dep/commons-fileupload2-core/target/commons-fileupload2-core-2.0.0-M5-SNAPSHOT.jar</systemPath>
             <version>2.0.0-M5-SNAPSHOT</version>
         </dependency>
         <dependency>
